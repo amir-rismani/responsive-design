@@ -1,0 +1,35 @@
+/* Reset
+=========*/
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* General
+===========*/
+:root{
+    --color-primary: #ff5722;
+    --color-secondary: #fff6f2;
+    --color-light-orange: #ffa589;
+    --color-navbar: #f8f8f8;
+    --color-black: #000000;
+    --color-heading: var(--color-black);
+    --color-text: #333333;
+    --color-white: #ffffff;
+}
+
+html{
+    direction: rtl;
+}
+
+body{
+    color: var(--color-text);
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: var(--color-heading)
+}
