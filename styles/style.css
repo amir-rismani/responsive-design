@@ -13,8 +13,8 @@
 ===========*/
 :root{
     --color-primary: #ff5722;
-    --color-secondary: #fff6f2;
-    --color-light-orange: #ffa589;
+    --color-secondary-light: #fff6f2;
+    --color-secondary-dark: #ffa589;
     --color-navbar: #f8f8f8;
     --color-black: #000000;
     --color-heading: var(--color-black);
@@ -39,3 +39,52 @@ h1, h2{
 
 h1{font-size: 2.5rem;}
 h2{font-size: 2.2rem;}
+
+/* Button
+==========*/
+.btn{
+    outline: none;
+    border: none;
+    padding:2rem 2.5rem;
+    margin: 1rem 0;
+    white-space: nowrap;
+    font-size: 1.4rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.btn--primary{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn--secondary{
+    background-color: var(--color-secondary-dark);
+    color: var(--color-white);
+}
+
+.btn--block{
+    width: 100%;
+}
+
+/* Badge
+========= */
+.badge{
+    padding: .5rem 1.5rem;
+    border-radius: 32px;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.badge--primary{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.badge--secondary{
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+}

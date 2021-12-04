@@ -1,5 +1,18 @@
+
 @media screen and (min-width: 1024px) {
+
+    /* General
+    ===========*/    
     body{font-size: 1.8rem;}
     h1{font-size: 5rem;}
     h2{font-size: 3.5rem;}
+
+    /* Button
+    ==========*/
+    .btn{font-size: 1.6rem;}
+    .btn--block{font-size: 2rem;}
+
+    /* Badge
+    ==========*/
+    .badge{font-size: 1.4rem;}
 }
