@@ -15,4 +15,11 @@
     /* Badge
     ==========*/
     .badge{font-size: 1.4rem;}
+
+    /* List
+    ======== */
+    .list{
+        font-size: 1.8rem;
+    }
+    
 }
