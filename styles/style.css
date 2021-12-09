@@ -77,6 +77,7 @@ h2{font-size: 2.2rem;}
     margin: 1rem 0;
     display: inline-block;
     white-space: nowrap;
+    border: 2px solid;
 }
 
 .badge--primary{
@@ -85,6 +86,7 @@ h2{font-size: 2.2rem;}
 }
 
 .badge--secondary{
+    background-color: var(--color-white);
     border: 2px solid var(--color-primary);
     color: var(--color-primary);
 }
@@ -100,6 +102,10 @@ h2{font-size: 2.2rem;}
     margin-left: 1rem;
 }
 
+.list--checked{
+ margin: 1rem 0 4rem;
+}
+
 .list--checked .list__item{
 margin-bottom: 1rem;
 }
@@ -113,7 +119,7 @@ margin-bottom: 1rem;
     background-image: url(../assets/images/icon/check-mark-correct-svgrepo-com.svg);
     background-position: right center;
     background-repeat: no-repeat;
-    padding-right: 3rem;
+    padding-right: 2.8rem;
 }
 
 /* List Style Image
@@ -134,3 +140,75 @@ margin-bottom: 1rem;
     padding-right: 3rem;
 
 }  */
+
+/* Plans Section
+================*/
+
+.plan-block{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 320px));
+    gap: 5rem 8rem;
+    margin: 5rem 2rem 2rem;
+}
+
+.plan{
+    font-size: 1.8rem;
+    transition: transform .2s ease-in-out;
+}
+
+.plan:hover{
+    transform: scale(1.02);
+}
+
+.plan--recommended{
+    transform: scale(1.05);
+}
+
+.plan--recommended:hover{
+    transform: scale(1.07);
+}
+.card{
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px 0px rgba(0, 0, 0, .2);
+}
+
+.card--primary .card__header{
+    background-color: var(--color-primary);
+}
+
+.card--secondary .card__header{
+    background-color: var(--color-secondary-dark);
+}
+
+.card__header,
+.card__body{
+    padding: 3rem 2.5rem ;
+}
+
+.card__header{
+    color: var(--color-white);
+}
+
+.plan__type{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price__amount{
+    font-size: 3rem;
+}
+
+.price__unit{
+    font-size: 1.4rem;
+}
+
+.plan__title{
+    font-size: 2rem;
+}
+.card__body{
+    background-color: var(--color-secondary-light);
+}

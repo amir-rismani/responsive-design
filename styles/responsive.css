@@ -1,6 +1,5 @@
 
 @media screen and (min-width: 1024px) {
-
     /* General
     ===========*/    
     body{font-size: 1.8rem;}
@@ -20,6 +19,15 @@
     ======== */
     .list{
         font-size: 1.8rem;
+    }        
+}
+
+@media screen and (min-width:  1140px) {
+    /* Plans Section
+    ================*/
+    .plan-block{
+        max-width: 1140px;
+        margin: 5rem auto;
     }
     
 }
