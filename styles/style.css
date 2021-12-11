@@ -40,6 +40,11 @@ h1, h2{
 h1{font-size: 2.5rem;}
 h2{font-size: 2.2rem;}
 
+.container{
+    max-width: 1140px;
+    margin: 5rem auto;
+}
+
 /* Button
 ==========*/
 .btn{
@@ -66,6 +71,10 @@ h2{font-size: 2.2rem;}
 
 .btn--block{
     width: 100%;
+}
+
+.btn--small{
+    padding: 1.2rem 2.5rem;
 }
 
 /* Badge
@@ -142,7 +151,7 @@ margin-bottom: 1rem;
 }  */
 
 /* Plans Section
-================*/
+=================*/
 
 .plan-block{
     display: grid;
@@ -211,4 +220,24 @@ margin-bottom: 1rem;
 }
 .card__body{
     background-color: var(--color-secondary-light);
+}
+
+/* Features Section
+====================*/
+.feature{
+    display: grid;
+    justify-items: center;
+    align-items: flex-end;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.feature__image{
+    width: 327px;
+}
+
+
+.feature__description{
+    margin: 1rem 0 2rem;
+    line-height: 2.8rem;
 }

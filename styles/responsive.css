@@ -19,15 +19,24 @@
     ======== */
     .list{
         font-size: 1.8rem;
-    }        
-}
+    } 
+    
+    /* Features Section
+    ====================*/
+    .feature{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: flex-start;
+        gap: 5rem;
+    }
 
-@media screen and (min-width:  1140px) {
-    /* Plans Section
-    ================*/
-    .plan-block{
-        max-width: 1140px;
-        margin: 5rem auto;
+    .feature--reverse .feature__content{
+        order: 1;
+    }
+    .feature--reverse .feature__image{
+        order: 2;
+    }
+    .feature__image{
+        width: auto;
     }
     
 }
