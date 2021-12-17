@@ -20,6 +20,8 @@
     --color-heading: var(--color-black);
     --color-text: #333333;
     --color-white: #ffffff;
+    --color-bg: #f5f5f5;
+    --color-border:#e8e8e8;
 }
 
 html{
@@ -75,6 +77,46 @@ h2{font-size: 2.2rem;}
 
 .btn--small{
     padding: 1.2rem 2.5rem;
+}
+
+.btn--round{
+    border-radius: 3.5rem;
+    padding: 1.2rem 3.5rem;
+}
+/* Input and Textarea
+=======================*/
+.form-control{
+    background-color: var(--color-bg);
+    outline: none;
+    border: 1px solid var(--color-border);
+    padding: 1.3rem 1.5rem;
+    margin: 4.5rem auto;
+}
+
+input{
+    border-radius: 39px;
+}
+
+.input--block{
+    display: block;
+    width: 100%;
+}
+
+/* Icon
+========= */
+.icon-container{
+    background: var(--color-bg);
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+.icon{
+    color: #ff5722;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 /* Badge
@@ -240,4 +282,65 @@ margin-bottom: 1rem;
 .feature__description{
     margin: 1rem 0 2rem;
     line-height: 2.8rem;
+}
+
+/* Contact Section
+====================*/
+.contactus-block{
+    padding: 2rem;
+}
+
+.contact__title{
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+.contact__description{
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 3rem 0 4.7rem ;
+}
+
+.contactus__method{
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    margin-bottom: 7.8rem;
+}
+
+.method__item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem
+}
+
+.contactus__map{
+    display: none;
+}
+
+.contactus__social{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    font-size: 3.4rem;
+    margin-bottom: 9.2rem;
+    gap: 2rem;
+}
+.social__link{
+    color: var(--color-primary);
+}
+
+
+.contactus__form{
+    border-radius: 20px;
+    border: 1px solid var(--color-border);
+    padding: 5.5rem 4.9rem;
+    box-shadow: 0 13px 19px 0 rgba(0, 0, 0, .1);
+
+}
+
+.form__title{
+    font-size: 2rem;
+    text-align: center;
 }

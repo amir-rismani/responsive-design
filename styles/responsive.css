@@ -38,5 +38,70 @@
     .feature__image{
         width: auto;
     }
+
+    /* Contact Section
+    ====================*/
+    .contactus{
+        display: grid;
+        grid-template-columns: 60fr 40fr;
+        grid-template-areas:
+        "method form"
+        "map form"
+        "social form";
+        gap: 2rem 5rem;
+    }
     
+    .contactus__method{
+        grid-area: method;
+        flex-direction: row;
+    }
+    
+    .method__item{
+        flex-direction: column;
+        flex: 1 1;
+        
+    }
+    
+    .contactus__map{
+        grid-area: map;
+        display: block;
+    }
+    .contactus__map img{
+        width: 100%;
+    }
+    .contactus__social{
+        grid-area: social;
+        justify-content: flex-end ;
+    }
+    
+    .contactus__form{
+        grid-area: form;
+    
+    }
+    
+    
+    /* .contact-grid{
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 60fr 40fr;
+    }
+
+    .contact__map{
+        display: block;
+    }
+    
+    .social-media{
+        order: 3;
+        justify-content: end;
+    }
+
+    .contact__icon{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contact__method{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: flex-start;
+    } */
 }
