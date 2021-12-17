@@ -66,9 +66,11 @@
         grid-area: map;
         display: block;
     }
+
     .contactus__map img{
         width: 100%;
     }
+
     .contactus__social{
         grid-area: social;
         justify-content: flex-end ;
@@ -76,32 +78,53 @@
     
     .contactus__form{
         grid-area: form;
-    
-    }
-    
-    
-    /* .contact-grid{
-        display: grid;
-        gap: 2rem;
-        grid-template-columns: 60fr 40fr;
     }
 
-    .contact__map{
+    /* Footer Section
+    ====================*/
+    .footer{
+        padding: 5% 8%;
+    }
+
+    .footer-section{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: space-between;
+        align-items: flex-start;
+
+    }
+    .footer-section__item.brand{
+        width: 15%;
+    }
+    .copyright{
+        display: block;
+    }
+
+    .footer__link{
+        font-size: 1.4rem;
+    }    
+
+    .footer-social__title{
         display: block;
     }
     
-    .social-media{
-        order: 3;
-        justify-content: end;
+    .footer-social{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
-    .contact__icon{
-        grid-template-columns: repeat(3, 1fr);
+    .footer-social__links{
+        justify-content: flex-start;
+        gap: 1.2rem;
     }
+    
+    .footer-social__links .footer__link {
+        font-size: 2.5rem;
+    }    
 
-    .contact__method{
-        grid-template-columns: 1fr;
-        justify-items: center;
-        align-items: flex-start;
-    } */
+    .copyright-mobile{
+        display: none;
+    }
 }
