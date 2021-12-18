@@ -127,4 +127,25 @@
     .copyright-mobile{
         display: none;
     }
+
+    /* Navbar Section
+    ====================*/
+    .nav__menu .menu, .nav__menu .menu--open{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: unset;
+        background-color: transparent;
+        width: auto;
+        padding: 0;
+        opacity: 1;
+    }
+        
+    .menu__item:last-child{
+        display: block;
+    }
+    
+    .hamburger{
+        display: none;
+    }
 }
