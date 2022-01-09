@@ -148,4 +148,35 @@
     .hamburger{
         display: none;
     }
+
+    /* Hero Section
+    ====================*/
+    .hero-wrapper{
+        justify-content: flex-start;
+        padding: 1.5rem;
+    }
+    
+    .hero__mockup{
+        display: block;
+        position: absolute;
+        left: -45%;
+        top: -25%;
+        height: 100%;
+
+    }
+    .mockup-img{
+        width: 60%;
+    }
+    .hero__content .title{
+        font-size: 5rem;
+    }
+    
+    .hero__content .sub-title{
+        font-size: 2.4rem;
+    }
+
+    .btn-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    
 }
