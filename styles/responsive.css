@@ -178,5 +178,46 @@
     .btn-container{
         grid-template-columns: 1fr 1fr;
     }
-    
+
+    /* Services Tab Section
+    ========================*/
+    .services{
+        margin: auto;
+    }
+
+
+
 }
+
+
+@media screen and (min-width: 767px) {
+    
+    
+    /* Services Tab Section
+    ========================*/
+    .services__tabs{
+        justify-content: space-between;
+    }
+
+    .tab-pane{
+        gap: 2rem 12rem;
+    }
+
+    .tab-pane__image{
+        display: block;
+        order: 1;
+    }
+    .main-image{
+        width: 100%;
+    }
+
+    .tab-pane__content .title{
+        font-size: 2.8rem;
+    }
+    .tab-pane__content .description{
+        font-size: 1.8rem;
+    }
+
+
+}
+
