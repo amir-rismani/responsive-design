@@ -23,6 +23,10 @@
     
     /* Features Section
     ====================*/
+    .features-block{
+        padding: 8rem 0 5rem;
+    }
+    
     .feature{
         grid-template-columns: repeat(2, 1fr);
         align-items: flex-start;
@@ -156,16 +160,13 @@
         padding: 1.5rem;
     }
     
-    .hero__mockup{
+    .mockup-img{
         display: block;
         position: absolute;
-        left: -45%;
-        top: -25%;
-        height: 100%;
-
-    }
-    .mockup-img{
-        width: 60%;
+        left: 10%;
+        top: 3%;
+        /* height: 100%; */
+        width: 30%;
     }
     .hero__content .title{
         font-size: 5rem;
@@ -182,11 +183,8 @@
     /* Services Tab Section
     ========================*/
     .services{
-        margin: auto;
+        margin: 16rem auto 6rem;
     }
-
-
-
 }
 
 
