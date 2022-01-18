@@ -303,12 +303,13 @@ margin-bottom: 1rem;
     display: grid;
     justify-items: center;
     align-items: flex-end;
+    grid-template-columns: repeat(auto-fill, 100%);
     gap: 1.5rem;
     margin-bottom: 4rem;
 }
 
 .feature__image{
-    width: 327px;
+    width: 95%;
 }
 
 
@@ -428,6 +429,7 @@ margin-bottom: 1rem;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .trust__item > img{

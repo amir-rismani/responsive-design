@@ -38,3 +38,5 @@ function initTabInterval(){
         nextTab.click();
     }, 5000);
 }
+
+AOS.init();

@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
-    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>صفحه نخست</title>
 </head>
 <body>
     <nav class="nav">
@@ -82,7 +83,7 @@
             </div>
         </div>
     </section>
-    <section class="services container">
+    <section class="services container" data-aos="fade-up">
         <h2 class="services__title">سرویس‌های تپسی</h2>
         <div class="services__tabs" id="nav-tab">
             <!-- <div class="fade-edge-left"></div>
@@ -245,7 +246,7 @@
          </div>
     </section>
     <section class="features-block container">
-        <div class="feature  feature--reverse">
+        <div class="feature  feature--reverse" data-aos="zoom-in-right">
             <img class="feature__image" src="../assets/images/static/i-mac.png" alt="تپسی پلاس">
 
             <div class="feature__content">
@@ -256,7 +257,7 @@
                 <button class="btn btn--primary btn--small feature__button">ورود و ثبت مام پنل سازمانی</button>
             </div>
         </div>
-        <div class="feature">
+        <div class="feature" data-aos="zoom-in-left">
             <img class="feature__image" src="../assets/images/static/macbook.png" alt="خدمات تپسی برای کسب و کار ها">
 
             <div class="feature__content">
@@ -269,7 +270,7 @@
         </div>
     </section>    
     <section class="plan-block">
-        <div class="plan">
+        <div class="plan" data-aos="flip-left">
             <div class="card card--secondary">
                 <header class="card__header">
                     <div class="plan__type">
@@ -292,7 +293,7 @@
                 </div>
             </div>
         </div>
-        <div class="plan plan--recommended">
+        <div class="plan plan--recommended" data-aos="flip-up">
             <div class="card card--primary">
                 <header class="card__header">
                     <div class="plan__type">
@@ -315,7 +316,7 @@
                 </div>
             </div>
         </div>
-        <div class="plan">
+        <div class="plan" data-aos="flip-right">
             <div class="card card--secondary">
                 <header class="card__header">
                     <div class="plan__type">
@@ -339,7 +340,7 @@
             </div>
         </div>
     </section>
-    <section class="contactus-block container">
+    <section class="contactus-block container" data-aos="zoom-in">
         <h2 class="contact__title">ارتباط با ما</h2>
         <h3 class="contact__description">شما می توانید، نظرات و انتقادات خود را برای ما بفرستید</h3>
         <div class="contactus">
@@ -442,7 +443,7 @@
             </div>
         </div>
     </footer>
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./scripts/general.js"></script>
 </body>
 </html>
