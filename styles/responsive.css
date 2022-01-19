@@ -186,6 +186,14 @@
     .services{
         margin: 16rem auto 6rem;
     }
+
+    /* Travels Section
+    ====================*/
+   
+    .travels{
+        justify-content: space-between;
+        gap: 0;
+    }
 }
 
 

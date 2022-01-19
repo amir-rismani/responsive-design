@@ -22,7 +22,9 @@
     --color-white: #ffffff;
     --color-bg: #f5f5f5;
     --color-border:#e8e8e8;
+    --color-mute-light:#cacaca;
     --color-mute:#acacac;
+    --color-mute-dark: #7B7B7B;
     --color-navy-blue:#4d4d4d;
 }
 
@@ -693,4 +695,128 @@ margin-bottom: 1rem;
 .tab-pane__content .description{
     font-size: 1.4rem;
     line-height: 3.2rem;
+}
+
+/* Travels Section
+====================*/
+.travels-block{
+    padding: 1.5rem;
+}
+
+.travels__title{
+    font-size: 3.5rem;
+    margin:15px 15px 5rem 15px;
+}
+
+.travels{
+    display: flex;
+    gap:2rem;
+    overflow: auto;
+}
+
+.travel{
+    display: flex;
+    flex-direction: column
+
+}
+.travel__image img, .travel__content{
+    border-radius: 3.2rem;
+}
+
+.travel__image{
+    width: 335px;
+    height: 236px;
+}
+
+.travel__image img{
+    width: 100%;
+    height: 100%;
+}
+
+.travel__content{
+    width: 75%;
+    margin: auto;
+    background-color: var(--color-white);
+    padding: 1.5rem 2.5rem;
+    box-shadow: 0px 8px 20px 0px rgba(0,0,0,.29);
+    position: relative;
+    top: -7rem;
+    
+}
+
+.travel-meta, .travel-actions{
+    display: flex;
+    align-items: center;
+}
+
+.travel-meta__special{
+    padding: 0px 1rem;
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+
+.travel-meta__type,
+.travel-meta__time,
+.favorites__value,
+.view__value{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-mute-dark);
+}
+
+.travel-meta__divider{
+    background-color: var(--color-mute-dark);
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    margin: auto 5px;
+}
+
+.travel-title{
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin: .5rem auto 1.5rem;
+}
+.travel-actions{
+    justify-content: space-between;
+}
+
+.travel-actions__view{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.travel-actions__clickable{
+    display: flex;
+    gap: 1rem;
+}
+
+.travel-actions__view .view,
+.travel-actions__view .favorites{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.favorites__icon{
+    width: 1.23rem;
+
+}
+.view__icon{
+    width: 1.42rem;
+ 
+}
+
+.favorites__value,
+.view__value{
+    color: var(--color-mute-light);
+    font-size: 1.5rem;
+}
+
+.create__icon,
+.delete__icon{
+    width: 1.52rem;
+    cursor: pointer;
+    caret-color: transparent
 }
