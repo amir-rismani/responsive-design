@@ -26,6 +26,9 @@
     --color-mute:#acacac;
     --color-mute-dark: #7B7B7B;
     --color-navy-blue:#4d4d4d;
+    --avatar-lg-size: 150px;
+    --avatar-md-size: 100px;
+    --avatar-sm-size: 50px;
 }
 
 html{
@@ -881,4 +884,62 @@ margin-bottom: 1rem;
 }
 .accordion--expanded:last-child .accordion__content{
     border-bottom: none;
+}
+
+/* Avatar
+===========*/
+.avatar-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .5rem;
+}
+
+.avatar{
+    background-color: var(--color-white);
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+    transition: all .25s ease-in-out;
+}
+.avatar:not(.avatar--more){
+    cursor: pointer;
+}
+.avatar:not(.avatar--more):hover{
+    transform: translateX(5px);
+}
+
+.avatar-group--lg .avatar{
+    width: var(--avatar-lg-size);
+    height: var(--avatar-lg-size);
+    border: 5px solid var(--color-white);
+    margin-left: -4rem;
+}
+
+.avatar-group--md .avatar{
+    width: var(--avatar-md-size);
+    height: var(--avatar-md-size);
+    border: 3px solid var(--color-white);
+    margin-left: -3rem;
+}
+
+.avatar-group--sm .avatar{
+    width: var(--avatar-sm-size);
+    height: var(--avatar-sm-size);
+    border: 3px solid var(--color-white);
+    margin-left: -1.5rem;
+}
+.avatar--more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    caret-color: transparent;
+
+}
+.avatar img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
