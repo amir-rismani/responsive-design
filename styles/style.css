@@ -893,6 +893,7 @@ margin-bottom: 1rem;
     justify-content: center;
     align-items: center;
     margin-top: .5rem;
+    flex-wrap: wrap;
 }
 
 .avatar{
@@ -914,6 +915,7 @@ margin-bottom: 1rem;
     height: var(--avatar-lg-size);
     border: 5px solid var(--color-white);
     margin-left: -4rem;
+    flex-basis: var(--avatar-lg-size);
 }
 
 .avatar-group--md .avatar{
