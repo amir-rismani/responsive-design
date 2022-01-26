@@ -27,7 +27,16 @@ tabs.forEach( tab => {
         targetTabPane.classList.add('in');
         initTabInterval();
     })
-})
+});
+
+
+const accordionTitles = document.querySelectorAll('.accordion__title');
+accordionTitles.forEach(accordionTitle => {
+    accordionTitle.addEventListener('click', function(ev) {
+        const accordion = this.parentNode;
+        accordion.classList.toggle('accordion--expanded');
+    });
+});
 
 function initTabInterval(){
     tabInterval = setInterval(() => {
@@ -37,6 +46,6 @@ function initTabInterval(){
             nextTab = activeTab.parentNode.firstElementChild;
         nextTab.click();
     }, 5000);
-}
+};
 
 AOS.init();

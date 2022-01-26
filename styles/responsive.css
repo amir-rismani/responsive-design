@@ -194,6 +194,18 @@
         justify-content: space-between;
         gap: 0;
     }
+
+
+    /* Accordion Section
+    ====================*/
+    .accordion-block{
+        margin: 3rem auto 6rem;
+    }
+
+    .accordion__heading{
+        font-size: 2rem;
+    }
+    
 }
 
 
